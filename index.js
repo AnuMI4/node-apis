@@ -33,6 +33,12 @@ app.get('/api', (req, res) => {
   });
 });
 
+app.get('/testing123', (req, res) => {
+  res.json({
+    message: 'Hello ANUM'
+  })
+})
+
 app.post('/api/login', express.json(), (req, res) => {
   const user = {
     username: req.body.username,
